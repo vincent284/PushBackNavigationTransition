@@ -19,6 +19,11 @@
 		4FF6A86A18DF2670002C565C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF6A85218DF2670002C565C /* UIKit.framework */; };
 		4FF6A87218DF2670002C565C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FF6A87018DF2670002C565C /* InfoPlist.strings */; };
 		4FF6A87418DF2670002C565C /* PushBackNavigationTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6A87318DF2670002C565C /* PushBackNavigationTransitionTests.m */; };
+		4FF6A88018DF268C002C565C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6A87E18DF268C002C565C /* MainViewController.m */; };
+		4FF6A88118DF268C002C565C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF6A87F18DF268C002C565C /* MainViewController.xib */; };
+		4FF6A88518DF2714002C565C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6A88318DF2714002C565C /* SecondViewController.m */; };
+		4FF6A88618DF2714002C565C /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF6A88418DF2714002C565C /* SecondViewController.xib */; };
+		4FF6A88A18DF287F002C565C /* PushBackAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6A88918DF287F002C565C /* PushBackAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,14 @@
 		4FF6A86F18DF2670002C565C /* PushBackNavigationTransitionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PushBackNavigationTransitionTests-Info.plist"; sourceTree = "<group>"; };
 		4FF6A87118DF2670002C565C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4FF6A87318DF2670002C565C /* PushBackNavigationTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushBackNavigationTransitionTests.m; sourceTree = "<group>"; };
+		4FF6A87D18DF268C002C565C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4FF6A87E18DF268C002C565C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4FF6A87F18DF268C002C565C /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		4FF6A88218DF2714002C565C /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		4FF6A88318DF2714002C565C /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4FF6A88418DF2714002C565C /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		4FF6A88818DF287F002C565C /* PushBackAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushBackAnimator.h; path = Animations/PushBackAnimator.h; sourceTree = "<group>"; };
+		4FF6A88918DF287F002C565C /* PushBackAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushBackAnimator.m; path = Animations/PushBackAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +120,17 @@
 		4FF6A85418DF2670002C565C /* PushBackNavigationTransition */ = {
 			isa = PBXGroup;
 			children = (
+				4FF6A88718DF285D002C565C /* Animations */,
 				4FF6A85D18DF2670002C565C /* AppDelegate.h */,
 				4FF6A85E18DF2670002C565C /* AppDelegate.m */,
 				4FF6A86018DF2670002C565C /* Images.xcassets */,
 				4FF6A85518DF2670002C565C /* Supporting Files */,
+				4FF6A87D18DF268C002C565C /* MainViewController.h */,
+				4FF6A87E18DF268C002C565C /* MainViewController.m */,
+				4FF6A87F18DF268C002C565C /* MainViewController.xib */,
+				4FF6A88218DF2714002C565C /* SecondViewController.h */,
+				4FF6A88318DF2714002C565C /* SecondViewController.m */,
+				4FF6A88418DF2714002C565C /* SecondViewController.xib */,
 			);
 			path = PushBackNavigationTransition;
 			sourceTree = "<group>";
@@ -142,6 +162,15 @@
 				4FF6A87018DF2670002C565C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FF6A88718DF285D002C565C /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				4FF6A88818DF287F002C565C /* PushBackAnimator.h */,
+				4FF6A88918DF287F002C565C /* PushBackAnimator.m */,
+			);
+			name = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +248,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF6A88618DF2714002C565C /* SecondViewController.xib in Resources */,
 				4FF6A85918DF2670002C565C /* InfoPlist.strings in Resources */,
+				4FF6A88118DF268C002C565C /* MainViewController.xib in Resources */,
 				4FF6A86118DF2670002C565C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF6A88518DF2714002C565C /* SecondViewController.m in Sources */,
 				4FF6A85F18DF2670002C565C /* AppDelegate.m in Sources */,
+				4FF6A88018DF268C002C565C /* MainViewController.m in Sources */,
 				4FF6A85B18DF2670002C565C /* main.m in Sources */,
+				4FF6A88A18DF287F002C565C /* PushBackAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
